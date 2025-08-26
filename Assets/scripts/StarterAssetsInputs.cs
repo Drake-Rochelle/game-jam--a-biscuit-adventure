@@ -5,18 +5,25 @@ namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
 	{
-		[Header("Character Input Values")]
-		public Vector2 move;
+		[SerializeField] private GameEventSO pickupCheck;
+        [Space]
+        [Space]
+        [Space]
+        public Vector2 move;
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
-
-		[Header("Movement Settings")]
 		public bool analogMovement;
-
-		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+
+		public void OnPickup(InputValue value)
+		{
+			if (value.Get<float>()>0.5f)
+			{
+				pickupCheck.RaiseEvent(this, null);
+			}
+		}
 
 		public void OnMove(InputValue value)
 		{
