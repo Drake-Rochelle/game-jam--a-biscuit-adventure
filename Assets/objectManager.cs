@@ -7,8 +7,17 @@ public class objectManager : MonoBehaviour
     [SerializeField] private Terrain terrain;
     private Vector3 pos;
     private GameObject obj;
+    private int seed;
     void Awake()
     {
+        seed = PlayerPrefs.GetInt("SEED");
+        if (seed == 0) 
+        {
+            seed = Random.Range(1, 999999999);
+            PlayerPrefs.SetInt("SEED", seed);
+            PlayerPrefs.Save();
+        }
+        Random.InitState(seed);
         for (int a = 0; a < objects.Length; a++) 
         {
             for (int i = 0; i < total[a]; i++)

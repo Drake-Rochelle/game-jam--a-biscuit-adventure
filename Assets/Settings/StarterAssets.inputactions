@@ -50,6 +50,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "scene change",
+                    "type": "Button",
+                    "id": "a4c54328-ec07-4776-82e3-8d7ae345aec3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -250,6 +259,28 @@
                     "action": "pickup",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6dde1862-7bc8-4021-992c-414473494646",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "scene change",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ef8fb26d-1964-4683-93e9-2a4cd19c597b",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "scene change",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -270,37 +301,6 @@
                     "isOR": false
                 }
             ]
-        },
-        {
-            "name": "Gamepad",
-            "bindingGroup": "Gamepad",
-            "devices": [
-                {
-                    "devicePath": "<Gamepad>",
-                    "isOptional": true,
-                    "isOR": false
-                },
-                {
-                    "devicePath": "<XInputController>",
-                    "isOptional": true,
-                    "isOR": false
-                },
-                {
-                    "devicePath": "<DualShockGamepad>",
-                    "isOptional": true,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "Xbox Controller",
-            "bindingGroup": "Xbox Controller",
-            "devices": []
-        },
-        {
-            "name": "PS4 Controller",
-            "bindingGroup": "PS4 Controller",
-            "devices": []
         }
     ]
 }

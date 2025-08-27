@@ -6,6 +6,8 @@ namespace StarterAssets
 	public class StarterAssetsInputs : MonoBehaviour
 	{
 		[SerializeField] private GameEventSO pickupCheck;
+		[SerializeField] private GameEventSO fade;
+		[SerializeField] private GameObject scene;
         [Space]
         [Space]
         [Space]
@@ -23,6 +25,11 @@ namespace StarterAssets
 			{
 				pickupCheck.RaiseEvent(this, null);
 			}
+		}
+
+		public void OnScenechange()
+		{
+			fade.RaiseEvent(this, (object)scene);
 		}
 
 		public void OnMove(InputValue value)

@@ -68,6 +68,15 @@ namespace StarterAssets
 
 		private const float _threshold = 0.01f;
 
+
+
+
+
+		private float saveTimer = -1;
+		[SerializeField] private float saveInterval = 5;
+
+
+
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -78,11 +87,13 @@ namespace StarterAssets
 
 		private void Awake()
 		{
+			saveTimer = 0;
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+			transform.transform.position = new Vector3(PlayerPrefs.GetFloat("PLAYERX"), PlayerPrefs.GetFloat("PLAYERY"), PlayerPrefs.GetFloat("PLAYERZ"));
 		}
 
 		private void Start()
@@ -98,7 +109,19 @@ namespace StarterAssets
 
 		private void Update()
 		{
-			JumpAndGravity();
+			if (saveTimer != -1)
+			{
+				saveTimer += Time.deltaTime;
+			}
+            if (saveTimer>saveInterval)
+            {
+				saveTimer = 0;
+                PlayerPrefs.SetFloat("PLAYERX", transform.position.x);
+                PlayerPrefs.SetFloat("PLAYERY", transform.position.y);
+                PlayerPrefs.SetFloat("PLAYERZ", transform.position.z);
+				Debug.Log("save");
+            }
+            JumpAndGravity();
 			GroundedCheck();
 			Move();
 		}
