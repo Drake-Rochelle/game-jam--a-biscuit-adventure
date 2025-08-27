@@ -48,13 +48,22 @@
                     "id": "ce31fa22-d624-4da1-9272-cc3417019fee",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "initialStateCheck": true
                 },
                 {
                     "name": "scene change",
                     "type": "Button",
                     "id": "a4c54328-ec07-4776-82e3-8d7ae345aec3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "show menu",
+                    "type": "Button",
+                    "id": "d16ea10d-250a-44ed-afa8-2995b1a44975",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -240,8 +249,8 @@
                 },
                 {
                     "name": "",
-                    "id": "96d72cb3-9034-4107-b163-2b2a94a505ed",
-                    "path": "<Keyboard>/e",
+                    "id": "bd716b83-b8a8-482d-beb2-6c2aee5fafbc",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";KeyboardMouse",
@@ -279,6 +288,17 @@
                     "processors": "",
                     "groups": ";Gamepad",
                     "action": "scene change",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7cc79762-f51d-4036-b433-d66ee775379e",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "show menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

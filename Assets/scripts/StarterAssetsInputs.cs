@@ -6,7 +6,9 @@ namespace StarterAssets
 	public class StarterAssetsInputs : MonoBehaviour
 	{
 		[SerializeField] private GameEventSO pickupCheck;
+		[SerializeField] private GameEventSO showMenu;
 		[SerializeField] private GameEventSO fade;
+		[SerializeField] private GameEventSO click;
 		[SerializeField] private GameObject scene;
         [Space]
         [Space]
@@ -18,9 +20,21 @@ namespace StarterAssets
 		public bool analogMovement;
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+        private bool isFocused = true;
+
+
+
+        public void OnShowmenu(InputValue value)
+		{
+            if (value.Get<float>() > 0.5f)
+            {
+                showMenu.RaiseEvent(this, null);
+            }
+        }
 
 		public void OnPickup(InputValue value)
 		{
+			click.RaiseEvent(this, null);
 			if (value.Get<float>()>0.5f)
 			{
 				pickupCheck.RaiseEvent(this, null);
@@ -74,17 +88,16 @@ namespace StarterAssets
 		public void SprintInput(bool newSprintState)
 		{
 			sprint = newSprintState;
-		}
-
-		private void OnApplicationFocus(bool hasFocus)
-		{
-			SetCursorState(cursorLocked);
-		}
-
-		private void SetCursorState(bool newState)
-		{
-			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-		}
-	}
-	
+        }
+        void OnApplicationFocus(bool focus)
+        {
+            isFocused = focus;
+        }
+        void Update()
+        {
+            bool shouldHideCursor = Time.timeScale != 0f && isFocused;
+            Cursor.visible = !shouldHideCursor;
+            Cursor.lockState = shouldHideCursor ? CursorLockMode.Locked : CursorLockMode.None;
+        }
+    }
 }

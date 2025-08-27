@@ -109,18 +109,18 @@ namespace StarterAssets
 
 		private void Update()
 		{
-			if (saveTimer != -1)
-			{
-				saveTimer += Time.deltaTime;
-			}
-            if (saveTimer>saveInterval)
-            {
-				saveTimer = 0;
-                PlayerPrefs.SetFloat("PLAYERX", transform.position.x);
-                PlayerPrefs.SetFloat("PLAYERY", transform.position.y);
-                PlayerPrefs.SetFloat("PLAYERZ", transform.position.z);
-				Debug.Log("save");
-            }
+			//if (saveTimer != -1)
+			//{
+			//	saveTimer += Time.deltaTime;
+			//}
+   //         if (saveTimer>saveInterval)
+   //         {
+			//	saveTimer = 0;
+   //             PlayerPrefs.SetFloat("PLAYERX", transform.position.x);
+   //             PlayerPrefs.SetFloat("PLAYERY", transform.position.y);
+   //             PlayerPrefs.SetFloat("PLAYERZ", transform.position.z);
+			//	Debug.Log("save");
+   //         }
             JumpAndGravity();
 			GroundedCheck();
 			Move();
