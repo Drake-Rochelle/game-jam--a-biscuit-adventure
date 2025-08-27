@@ -22,8 +22,6 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
         private bool isFocused = true;
 
-
-
         public void OnShowmenu(InputValue value)
 		{
             if (value.Get<float>() > 0.5f)
