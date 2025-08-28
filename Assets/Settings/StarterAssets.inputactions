@@ -61,6 +61,96 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Item0",
+                    "type": "Button",
+                    "id": "9acae7c9-2195-43ba-8064-23f767de8b05",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item1",
+                    "type": "Button",
+                    "id": "d1c4a4fc-c6a1-4016-b5ba-b1e8be021f31",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item2",
+                    "type": "Button",
+                    "id": "a60f2aa5-c3f9-4ef7-8a18-2bbe740331ee",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item3",
+                    "type": "Button",
+                    "id": "f0749b04-813a-4340-991f-62ad41ce49cd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item4",
+                    "type": "Button",
+                    "id": "5bceb263-7d20-4e01-ad62-58a97377f0bd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item5",
+                    "type": "Button",
+                    "id": "00e601df-73f9-4b41-bdda-f7e0ac5937dd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item6",
+                    "type": "Button",
+                    "id": "cb421ef8-3a91-40b5-b45a-53ed4787c5c7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item7",
+                    "type": "Button",
+                    "id": "76632ed8-c32c-44af-bbcc-07b6f79b56b9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item8",
+                    "type": "Button",
+                    "id": "1b5e4c11-8fae-4671-81b2-f23336e8c1a3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Item9",
+                    "type": "Button",
+                    "id": "83baa5b8-2c7b-4c8c-a9e1-de693444e005",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "show menu",
                     "type": "Button",
                     "id": "d16ea10d-250a-44ed-afa8-2995b1a44975",
@@ -282,12 +372,111 @@
                 },
                 {
                     "name": "",
-                    "id": "ef8fb26d-1964-4683-93e9-2a4cd19c597b",
-                    "path": "<Gamepad>/start",
+                    "id": "6f3303b7-df8a-422c-8c46-8bb10158ebf3",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "scene change",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item0",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b28ac65-e773-4c2d-ac22-932d69383927",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6a81ba7-6d35-4944-ab6e-91ed223c64f8",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "db49e78e-bab0-4976-9862-ea4320c5adcf",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac46e67c-ca12-4a88-b443-225e6a7ca1ce",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b67fcce-b992-4f39-a648-1f2adfe2a1c3",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2035f09a-e7db-47eb-8492-a829b9361ac8",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5c332632-d9a9-4ef1-bb6e-13ba469a45a9",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6fbddb94-ab9c-4470-ae08-d2abbf2a3a59",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c12ed2c7-2f07-4419-ad0e-700221fdf610",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";KeyboardMouse",
+                    "action": "Item9",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

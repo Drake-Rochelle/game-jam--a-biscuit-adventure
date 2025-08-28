@@ -9,7 +9,8 @@ namespace StarterAssets
 		[SerializeField] private GameEventSO showMenu;
 		[SerializeField] private GameEventSO fade;
 		[SerializeField] private GameEventSO click;
-		[SerializeField] private GameObject scene;
+        [SerializeField] private GameEventSO eat;
+        [SerializeField] private GameObject scene;
         [Space]
         [Space]
         [Space]
@@ -21,6 +22,49 @@ namespace StarterAssets
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
         private bool isFocused = true;
+
+
+        public void OnItem0()
+        {
+           eat.RaiseEvent(this, (object)0);
+        }
+        public void OnItem1()
+        {
+           eat.RaiseEvent(this, (object)1);
+        }
+        public void OnItem2()
+        {
+           eat.RaiseEvent(this, (object)2);
+        }
+        public void OnItem3()
+        {
+           eat.RaiseEvent(this, (object)3);
+        }
+        public void OnItem4()
+        {
+           eat.RaiseEvent(this, (object)4);
+        }
+        public void OnItem5()
+        {
+           eat.RaiseEvent(this, (object)5);
+        }
+        public void OnItem6()
+        {
+           eat.RaiseEvent(this, (object)6);
+        }
+        public void OnItem7()
+        {
+           eat.RaiseEvent(this, (object)7);
+        }
+        public void OnItem8()
+        {
+           eat.RaiseEvent(this, (object)8);
+        }
+        public void OnItem9()
+        {
+           eat.RaiseEvent(this, (object)9);
+        }
+
 
         public void OnShowmenu(InputValue value)
 		{
