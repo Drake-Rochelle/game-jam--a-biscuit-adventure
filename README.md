@@ -1,3 +1,5 @@
+**Playable in browser: https://super-anthem-3d.itch.io/the-hike**
+
 <img width="2502" height="1404" alt="Screenshot 2025-08-28 125545" src="https://github.com/user-attachments/assets/166bdcd4-703a-4b41-ae97-9d143a630a87" />
 
 **This game is the predecessor to "Unity Multiplayer Sandbox Game".**
